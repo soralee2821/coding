@@ -1,0 +1,167 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "2020-10-12",
+      "provenance": [],
+      "authorship_tag": "ABX9TyOczzU4hbdh43CyrnHCTsiY",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/soralee2821/coding/blob/master/2020_10_12.py\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "4ecR3Db5Fis3"
+      },
+      "source": [
+        "import sys\n",
+        "T = int(sys.stdin.readline())\n",
+        "\n",
+        "for i in range(T):\n",
+        "    a, b = map(int, sys.stdin.readline().split())\n",
+        "    print(a+b)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "nFNCmyhsGLe8",
+        "outputId": "cf07af85-79ca-4189-9eae-992e7c29a0e3",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 52
+        }
+      },
+      "source": [
+        "h, m = map(int, input().split())\n",
+        "if m >= 45:\n",
+        "  print(h, m-45)\n",
+        "elif m < 45 and h > 0:\n",
+        "  print(h-1, m+15)\n",
+        "else:\n",
+        "  print(23, m+15)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "10 10\n",
+            "9 25\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "a5POlVZohHlq",
+        "outputId": "9d29497a-0949-4b8e-ace0-e5ce79ba34d6",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 52
+        }
+      },
+      "source": [
+        "n = int(input())\n",
+        "ans = 0\n",
+        "for i in range(1,n+1):\n",
+        "  ans += i\n",
+        "print(ans)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "3\n",
+            "6\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "i0r4awcriak0",
+        "outputId": "c8fa308d-f86c-4c86-8635-5ea4a6910fa7",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 122
+        }
+      },
+      "source": [
+        "n = int(input())\n",
+        "for i in range(n,0,-1):\n",
+        "  print(i)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "5\n",
+            "5\n",
+            "4\n",
+            "3\n",
+            "2\n",
+            "1\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "JB6cqTPOjIB0"
+      },
+      "source": [
+        "T = int(input())\n",
+        "i = 0\n",
+        "for i in range(T):\n",
+        "  i += 1\n",
+        "  a, b = map(int, input().split())\n",
+        "  print(\"Case #%d: %d\" %(i,a+b))"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "p9o3j0mfmq7y"
+      },
+      "source": [
+        "import sys\n",
+        "read = sys.stdin.readline\n",
+        "T = int(read())\n",
+        "for i in range(T):\n",
+        "  test = [int(x) for x in read().split()]\n",
+        "  print(\"Case #{}: {}\".format(i+1, test[0]+test[1]))"
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
